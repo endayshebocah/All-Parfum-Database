@@ -108,18 +108,19 @@
         // --- Firebase Setup ---
         // PENTING: Ganti dengan konfigurasi Firebase Anda sendiri!
         const firebaseConfig = {
-          apiKey: "GANTI_DENGAN_API_KEY_ANDA",
-          authDomain: "GANTI_DENGAN_AUTH_DOMAIN_ANDA",
-          projectId: "GANTI_DENGAN_PROJECT_ID_ANDA",
-          storageBucket: "GANTI_DENGAN_STORAGE_BUCKET_ANDA",
-          messagingSenderId: "GANTI_DENGAN_MESSAGING_SENDER_ID_ANDA",
-          appId: "GANTI_DENGAN_APP_ID_ANDA"
-        };
+  apiKey: "AIzaSyBFrkO0Gqxju_rx9wXozB5G5lzEtwzFT74",
+  authDomain: "all-parfum-database.firebaseapp.com",
+  projectId: "all-parfum-database",
+  storageBucket: "all-parfum-database.firebasestorage.app",
+  messagingSenderId: "566803055497",
+  appId: "1:566803055497:web:8a9a161e9d2793307cd758",
+  measurementId: "G-Z5PRCEFPTV"
+};
         
         const appContainer = document.getElementById('app-container');
 
         // Cek jika konfigurasi sudah diisi
-        if (firebaseConfig.apiKey === "GANTI_DENGAN_API_KEY_ANDA") {
+        if (firebaseConfig.apiKey === "AIzaSyBFrkO0Gqxju_rx9wXozB5G5lzEtwzFT74") {
             appContainer.innerHTML = `<div class="flex items-center justify-center h-screen"><div class="text-center p-8 bg-gray-800 rounded-lg shadow-xl"><h2 class="text-2xl font-bold text-red-500 mb-4">Konfigurasi Diperlukan</h2><p class="text-gray-300">Konfigurasi Firebase belum diatur. Silakan edit file <strong>index.html</strong> dan masukkan konfigurasi dari proyek Firebase Anda.</p></div></div>`;
             throw new Error("Firebase config is not set.");
         }
